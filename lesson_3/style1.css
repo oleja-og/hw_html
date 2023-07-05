@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 51px;
+}
+.logo img {
+    width: 35px;
+    height: 40px;
+    flex-shrink: 0;
+}
+.logo h3 {
+    color: #000;
+    font-size: 24px;
+    font-family: Gilroy-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+}
+.navigation a {
+    color: #000000;
+    font-size: 14px;
+    font-family: Gilroy-SemiBold,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 41px;
+
+}
+
+.content_wrapper {
+    grid-column: 1;
+    margin-top: 96px;
+
+}
+.content_img {
+    grid-column: 2;
+    width: 544px;
+    height: 374px;
+    flex-shrink: 0;
+    margin-top: 96px;
+    margin-bottom: 162px;
+}
+.content_title {
+    color: #000;
+    font-size: 60px;
+    font-family: Gilroy-Bold,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.content_disc {
+    width: 466px;
+    height: 48px;
+    margin-top: 17px;
+    margin-bottom: 37px;
+    color: #888;
+    font-size: 20px;
+    font-family: Gilroy-Medium,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.content_button {
+
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 162px;
+}
+.content_button h6{
+    color: #AAA;
+    font-size: 15px;
+    font-family: Gilroy-Bold,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.content_button button {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-family: Gilroy-Bold,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.20);
+}
+.content_button h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+}
+
+.logos_img {
+    width: 160px;
+    height: 50px;
+    margin-top: 97px;
+    margin-bottom: 96px;
+
+
+}
+
