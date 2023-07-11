@@ -280,9 +280,9 @@ img {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
     .container {
-        width: 375px;
+        width: 320px;
     }
 
     .profile {
