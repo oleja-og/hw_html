@@ -47,7 +47,22 @@ img {
     justify-content: flex-end;
     align-items: center;
     padding-right: 32px;
+    position: relative;
 
+}
+
+.busket_chek {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hotpink;
+    color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px 50px 50px 50px;
+    top: 15px;
+    right: 10px;
 }
 
 .content_head_wrapper {
@@ -119,6 +134,9 @@ img {
     text-align: center;
 
 }
+.card_img {
+    filter: brightness(40%);
+}
 
 .promotion {
     position: absolute;
@@ -174,6 +192,45 @@ img {
 .card1 {
     display: grid;
     grid-template-rows: repeat(2, auto);
+    position: relative;
+}
+
+.card1_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card1_busket {
+    display: none;
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    border: 3px solid;
+    border-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    bottom: 60%;
+    right: 30%;
+}
+
+.card1_busket_img {
+    fill: #FFFFFF;
+}
+
+.card1_busket_text {
+    color: #FFFFFF;
+}
+
+.card1:hover .card1_img {
+    filter: brightness(40%);
+}
+
+.card1:hover .card1_busket {
+    display: flex;
+
 
 }
 
@@ -214,18 +271,28 @@ img {
 }
 
 .btn {
-    position: relative;
-    text-align: center;
-}
-
-.text_btn {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #F26376;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 212px;
+    height: 48px;
+}
+
+.btn:hover {
+    background-color: hotpink;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.text_btn:hover {
+    color: #FFFFFF;
+    background-color: hotpink;
 }
 
 .content_delivery_wrapper {
@@ -279,6 +346,7 @@ img {
 
 .content_email_wrapper {
     background: lightgray;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(1, auto);
 }
@@ -344,6 +412,31 @@ img {
     flex-shrink: 0;
 }
 
+.input_email {
+    width: 256px;
+    flex-shrink: 0;
+    border-radius: 50px 0 0 50px;
+    background-color: #E1E1E1;
+    color: #222224;
+    border: 0;
+    text-align: center;
+}
+
+.button_email1 {
+    width: 100px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 0 50px 50px 0;
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.button_email1:hover {
+    background-color: hotpink;
+    transition: 0.3s;
+}
+
 .footer_wrapper {
     display: flex;
     justify-content: space-between;
@@ -376,21 +469,29 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    gap: 16px;
+
 }
 
 .inst {
+    fill: #000000;
+    width: 16px;
+    height: 16px;
     position: absolute;
+
 }
 
 .content_twitter {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+
 }
 
 .twitter {
+    fill: #000000;
+    width: 16px;
+    height: 16px;
     position: absolute;
 }
 
@@ -398,10 +499,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+
 }
 
 .pinterest {
+    fill: #000000;
+    width: 16px;
+    height: 16px;
     position: absolute;
 }
 
@@ -409,11 +513,82 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+
 }
 
 .facebook {
+    fill: #000000;
+    width: 16px;
+    height: 16px;
     position: absolute;
+}
+
+.rectangl1 {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.rectangl2 {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.rectangl3 {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.rectangl4 {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.content_inst:hover .rectangl1 {
+    background-color: hotpink;
+    transition: 0.3s;
+}
+
+.content_inst:hover .inst {
+    fill: white;
+    transition: 0.3s;
+}
+
+.content_twitter:hover .rectangl2 {
+    background-color: hotpink;
+    transition: 0.3s;
+}
+
+.content_twitter:hover .twitter {
+    fill: white;
+
+}
+
+.content_pinterest:hover .rectangl3 {
+    background-color: hotpink;
+    transition: 0.3s;
+}
+
+.content_pinterest:hover .pinterest {
+    fill: white;
+    transition: 0.3s;
+}
+
+.content_facebook:hover .rectangl4 {
+    background-color: hotpink;
+    transition: 0.3s;
+}
+
+.content_facebook:hover .facebook {
+    fill: white;
+    transition: 0.3s;
 }
 
 
@@ -652,6 +827,10 @@ img {
         display: none;
     }
 
+    .busket {
+        display: none;
+    }
+
     .content_head_text {
         grid-column: 1/3;
         text-align: center;
@@ -779,6 +958,10 @@ img {
     }
 
     .profile {
+        display: none;
+    }
+
+    .busket {
         display: none;
     }
 
@@ -925,6 +1108,10 @@ img {
     }
 
     .profile {
+        display: none;
+    }
+
+    .busket {
         display: none;
     }
 
